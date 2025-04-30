@@ -23,7 +23,7 @@
   --second-family: "Barlow", sans-serif;
 }
 
-body {
+main {
   width: 1440px;
   height: 960px;
   display: flex;
@@ -129,7 +129,7 @@ h1:hover {
     gap: 0px;
     background: #f4d04e;
   }
-  .container{
+  .container {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
@@ -139,32 +139,30 @@ h1:hover {
     border-radius: 20px;
     padding: 24px;
     width: 327px;
-height: 501px;
+    height: 501px;
     box-shadow: 8px 8px 0 0 #000;
     background: var(--color-white);
-    
   }
-  .main-image{
+  .main-image {
     width: 100%;
   }
   .image {
     width: 279px;
     border-radius: 10px;
   }
-  .title{
+  .title {
     width: 279px;
-height: 173px;
-gap: 12px;
+    height: 173px;
+    gap: 12px;
   }
-  h1{
+  h1 {
     font-size: 20px;
   }
-  .publish{
+  .publish {
     font-size: 12px;
   }
-  .description{
+  .description {
     font-size: 14px;
     margin-bottom: 24px;
   }
-
 }
