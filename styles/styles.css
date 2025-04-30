@@ -1,33 +1,112 @@
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-weight: 900;
+  font-family: Figtree;
+  src: url(/assets/fonts/Figtree-Italic-VariableFont_wght.ttf);
+}
+@font-face {
+  font-weight: 600;
+  font-family: Figtree;
+  src: url(/assets/fonts/Figtree-VariableFont_wght.ttf);
 }
 
 :root {
-	--color-gray-950: #111;
-	--color-white: #fff;
-	--color-yellow: #f4d04e;
-	--color-gray-500: #6b6b6b;
-}
-:root {
-    --font-family: "Figtree", sans-serif;
-    --second-family: "Barlow", sans-serif;
-  }
-
-main{
-    width: 1440px;
-    height: 960px;
+  --color-gray-950: #111;
+  --color-white: #fff;
+  --color-yellow: #f4d04e;
+  --color-gray-500: #6b6b6b;
+  --font-family: "Figtree", sans-serif;
+  --second-family: "Barlow", sans-serif;
 }
 
-.container{
-    border: 1px solid var(--color-gray-950);
-    border-radius: 20px;
-    padding: 24px;
-    width: 384px;
-    height: 522px;
-    box-shadow: 8px 8px 0 0 #000;
-    background: var(--color-white);
+main {
+  width: 1440px;
+  height: 960px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 0px;
+  background: #f4d04e;
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 24px;
+  border: 1px solid var(--color-gray-950);
+  border-radius: 20px;
+  padding: 24px;
+  width: 384px;
+  height: 522px;
+  box-shadow: 8px 8px 0 0 #000;
+  background: var(--color-white);
+}
+
+.main-image {
+  border-radius: 10px;
+}
+
+.title {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 12px;
+  width: 336px;
+  height: 194px;
+}
+
+.btn {
+  border-radius: 4px;
+  padding: 4px 12px;
+  width: 82px;
+  height: 29px;
+  background: #f4d04e;
+}
+.publish {
+  font-family: "Figtree", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #111;
+}
+
+h1 {
+  font-family: "Figtree", sans-serif;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 1.5;
+  color: #111;
+}
+.description {
+  font-family: "Figtree", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #6b6b6b;
+}
+.autor {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 12px;
+}
+.avatar {
+  width: 32px;
+  height: 32px;
+}
+.autor-text {
+  font-family: "Figtree", sans-serif;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #111;
 }
