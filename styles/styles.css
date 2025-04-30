@@ -23,7 +23,7 @@
   --second-family: "Barlow", sans-serif;
 }
 
-main {
+body {
   width: 1440px;
   height: 960px;
   display: flex;
@@ -86,9 +86,9 @@ h1 {
   color: #111;
 }
 
-h1:hover{
+h1:hover {
   cursor: pointer;
-  color: #F4D04E;
+  color: #f4d04e;
 }
 
 .description {
@@ -116,4 +116,55 @@ h1:hover{
   font-size: 14px;
   line-height: 1.5;
   color: #111;
+}
+
+@media (max-width: 800px) {
+  body {
+    width: auto;
+    height: 812px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 0px;
+    background: #f4d04e;
+  }
+  .container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 24px;
+    border: 1px solid var(--color-gray-950);
+    border-radius: 20px;
+    padding: 24px;
+    width: 327px;
+height: 501px;
+    box-shadow: 8px 8px 0 0 #000;
+    background: var(--color-white);
+    
+  }
+  .main-image{
+    width: 100%;
+  }
+  .image {
+    width: 279px;
+    border-radius: 10px;
+  }
+  .title{
+    width: 279px;
+height: 173px;
+gap: 12px;
+  }
+  h1{
+    font-size: 20px;
+  }
+  .publish{
+    font-size: 12px;
+  }
+  .description{
+    font-size: 14px;
+    margin-bottom: 24px;
+  }
+
 }
